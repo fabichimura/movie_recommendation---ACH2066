@@ -1,0 +1,78 @@
+dataframe com os filmes com avaliação 5, e seu agrupamento pelo movie_id e movie_name
++--------+--------------------+-----+
+|movie_id|          movie_name|count|
++--------+--------------------+-----+
+|      50|    Star Wars (1977)|  325|
+|     100|        Fargo (1996)|  227|
+|     127|           Godfather|  214|
+|     174|Raiders of the Lo...|  202|
+|      56| Pulp Fiction (1994)|  188|
+|     318|Schindler's List ...|  186|
+|      98|Silence of the Lambs|  181|
+|     313|      Titanic (1997)|  179|
+|     172| Empire Strikes Back|  172|
+|     181|Return of the Jed...|  171|
+|      64|Shawshank Redemption|  163|
+|     173|      Princess Bride|  159|
+|      12|      Usual Suspects|  149|
+|     483|   Casablanca (1942)|  141|
+|      22|   Braveheart (1995)|  134|
+|     258|      Contact (1997)|  132|
+|     286|     English Patient|  131|
+|     357|One Flew Over the...|  126|
+|     168|Monty Python and ...|  125|
+|     302|L.A. Confidential...|  120|
++--------+--------------------+-----+
+only showing top 20 rows
+
+dataframe com os filmes recomendados para o user#1, que ele avaliaria com 4.5 pelo menos
++----------+--------+-------+
+|prediction|movie_id|user_id|
++----------+--------+-------+
+|  4.600646|    1512|      1|
+|  4.744816|     511|      1|
+| 4.5870337|     100|      1|
+| 4.5857863|     661|      1|
+|   4.65462|     172|      1|
+|   4.77561|     408|      1|
+| 4.7937584|     223|      1|
+| 4.6310444|     513|      1|
+|  4.549049|      64|      1|
+|   4.99212|    1449|      1|
+| 4.6879244|     483|      1|
+|  4.902961|     647|      1|
+| 4.6821146|     114|      1|
+| 4.5355563|     474|      1|
+|  4.693947|     530|      1|
+| 4.5078344|    1007|      1|
+| 4.6600842|    1122|      1|
+| 4.5564537|     522|      1|
+|   4.69982|     963|      1|
++----------+--------+-------+
+
+dataframe mostrando a quantidade de usuários que avaliaram com 5 naqueles filmes que foram depois recomendados ao user#1
++--------+----------+-------+--------------------+-----+
+|movie_id|prediction|user_id|          movie_name|count|
++--------+----------+-------+--------------------+-----+
+|     530|  4.693947|      1|Man Who Would Be ...|   27|
+|     474| 4.5355563|      1|Dr. Strangelove o...|   95|
+|    1007| 4.5078344|      1|Waiting for Guffm...|   14|
+|      64|  4.549049|      1|Shawshank Redemption|  163|
+|    1449|   4.99212|      1|Pather Panchali (...|    5|
+|     483| 4.6879244|      1|   Casablanca (1942)|  141|
+|     513| 4.6310444|      1|           Third Man|   34|
+|     223| 4.7937584|      1|  Sling Blade (1996)|   52|
+|     408|   4.77561|      1|         Close Shave|   70|
+|     172|   4.65462|      1| Empire Strikes Back|  172|
+|    1122| 4.6600842|      1|They Made Me a Cr...|    1|
+|     522| 4.5564537|      1|  Down by Law (1986)|   13|
+|     963|   4.69982|      1|Some Folks Call I...|   20|
+|     647|  4.902961|      1|          Ran (1985)|   30|
+|     114| 4.6821146|      1|Wallace & Gromit:...|   38|
+|    1512|  4.600646|      1|        World of Apu|    4|
+|     511|  4.744816|      1|Lawrence of Arabi...|   79|
+|     100| 4.5870337|      1|        Fargo (1996)|  227|
+|     661| 4.5857863|      1|    High Noon (1952)|   31|
++--------+----------+-------+--------------------+-----+
+
+Existem valores comuns nos DataFrames: 19
