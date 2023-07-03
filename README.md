@@ -62,6 +62,7 @@
 	prediction float,
 	PRIMARY KEY(prediction)
 	);
+  <br>
   <b>Para importar dados de um CSV</b>
 	-> COPY movie_recommendation.movie_ratings_100k FROM '<pasta-com-os-dados>' WITH DELIMITER=',' AND HEADER=TRUE;
   <h4>Alguns links úteis</h4>
